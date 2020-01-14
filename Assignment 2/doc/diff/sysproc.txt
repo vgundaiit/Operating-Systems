@@ -1,0 +1,42 @@
+--- sysproc.c	2019-10-03 18:10:02.710852164 -0500
++++ ../xv6-test-ground/sysproc.c	2019-10-03 18:06:02.217071157 -0500
+@@ -13,6 +13,41 @@
+   return fork();
+ }
+ 
++// nth argument, pointer to pointer of rtcdate and size of the rtcdate
++int argrtcdate(int n,struct rtcdate** rpointer,int size){
++  int i;
++  /* Get current process */
++  struct proc *curproc = myproc();
++  //argint is in syscall.c
++  if(argint(n, &i) < 0){
++    return -1;
++  }
++  if(size < 0 || (uint)i >= curproc->sz || (uint)i+size > curproc->sz){
++    return -1;
++  }
++  *rpointer = (struct rtcdate*)i;
++  return 0;
++}
++
++int sys_date(void){
++  //struct rtcdate r;
++  /* Get the location in the memory where r is stored 
++  like buf in read call*/
++  
++  // Now r is a pointer to rtcdate type
++  struct rtcdate *r;
++
++  if(argrtcdate(0,&r,sizeof(struct rtcdate)) < 0){
++    return -1;
++  }
++
++  cmostime(r);
++
++  return 1;
++}
++
+ int
+ sys_exit(void)
+ {

@@ -1,0 +1,18 @@
+--- syscall.c	2019-10-03 18:10:02.710852164 -0500
++++ ../xv6-test-ground/syscall.c	2019-09-29 19:20:30.212763699 -0500
+@@ -103,6 +103,7 @@
+ extern int sys_wait(void);
+ extern int sys_write(void);
+ extern int sys_uptime(void);
++extern int sys_date(void); 
+ 
+ static int (*syscalls[])(void) = {
+ [SYS_fork]    sys_fork,
+@@ -126,6 +127,7 @@
+ [SYS_link]    sys_link,
+ [SYS_mkdir]   sys_mkdir,
+ [SYS_close]   sys_close,
++[SYS_date]    sys_date, 
+ };
+ 
+ void

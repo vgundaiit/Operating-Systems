@@ -1,0 +1,20 @@
+--- ../purexv6/Makefile	2019-10-03 18:10:02.710852164 -0500
++++ ./executable/Makefile	2019-10-03 21:24:11.486124421 -0500
+@@ -181,6 +181,8 @@
+ 	_usertests\
+ 	_wc\
+ 	_zombie\
++	_date\
++	_date_testing\
+ 
+ fs.img: mkfs README $(UPROGS)
+ 	./mkfs fs.img README $(UPROGS)
+@@ -250,6 +252,8 @@
+ EXTRA=\
+ 	mkfs.c ulib.c user.h cat.c echo.c forktest.c grep.c kill.c\
+ 	ln.c ls.c mkdir.c rm.c stressfs.c usertests.c wc.c zombie.c\
++	date.c\
++	date_testing.c\
+ 	printf.c umalloc.c\
+ 	README dot-bochsrc *.pl toc.* runoff runoff1 runoff.list\
+ 	.gdbinit.tmpl gdbutil\

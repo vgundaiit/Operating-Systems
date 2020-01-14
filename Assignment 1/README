@@ -1,0 +1,30 @@
+SOURCE CODE AND EXECUTABLE:
+
+1. The main code resides in Shell_A20453991.c file
+
+2. Use the following command to compile it and create an executable object
+
+    gcc Shell_A20453991.c -o shell.out
+
+The above command will create shell.out executable in the current directory.
+
+3. Start the executable by running the following command:
+
+    $./shell.out
+
+4. The above command will start the shell and you can execute the commands in the new shell
+
+5. Press Ctrl+C to exit from the shell
+
+TESTING:
+
+1. The equivalence partitions, test cases and outputs are present in the Testing.odt file
+2. The test command strings that I used are also given in TestCases.txt file.
+3. testhelper.txt is used for testing. It just contains a string hello.
+
+
+COMMENTS:
+
+I have added a tag: "Varun's comment" whereever I have added the comment in the code in Shell_A20453991.c
+
+

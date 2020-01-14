@@ -1,0 +1,8 @@
+--- usys.S	2019-10-03 18:10:02.710852164 -0500
++++ ../xv6-test-ground/usys.S	2019-09-29 19:12:41.799719205 -0500
+@@ -29,3 +29,4 @@
+ SYSCALL(sbrk)
+ SYSCALL(sleep)
+ SYSCALL(uptime)
++SYSCALL(date)
+\ No newline at end of file

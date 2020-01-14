@@ -1,0 +1,10 @@
+--- user.h	2019-10-03 18:10:02.710852164 -0500
++++ ../xv6-test-ground/user.h	2019-09-29 19:13:59.639911837 -0500
+@@ -23,6 +23,7 @@
+ char* sbrk(int);
+ int sleep(int);
+ int uptime(void);
++int date(struct rtcdate*); 
+ 
+ // ulib.c
+ int stat(const char*, struct stat*);

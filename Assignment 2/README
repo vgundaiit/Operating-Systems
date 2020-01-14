@@ -1,0 +1,32 @@
+The homework is divided into following folders:
+1. doc
+      This folder contains Solution to Problem 1 in Problem_1_Solution.odt 
+      and the changes made for Problem 2 are stored in Problem_2_Solution.odt
+      The man page for the system call date is present in manpage.odt and 
+      diff for all the files that were modified is present in diff folder.
+      Date_Testing.odt contains the information about how the testing was done for This
+      system call.
+
+2. executable
+      This contains the solution to problem 2 that is implementation of date() system call.
+      Please run the following to see the date() system call working:
+      a. make qemu-nox
+      b. date
+
+      The above command will print out UTC date & time in hour:min:sec mm-dd-yyyy format like:
+      
+      Current UTC date & time is 2:3:30 10-4-2019
+
+      For testing, you can run date_testing using the following command:
+      a. date_testing
+
+3.src
+      This folder contains only modified files for the implementation of date
+      system call. Also it contains the user level programs date.c and
+      date_testing.c. date.c implements date system call and date_testing.c
+      tests the date system call. You can just use executable folder to test the 
+      working of date system call.
+
+
+
+

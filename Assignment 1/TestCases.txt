@@ -1,0 +1,43 @@
+Commands used for Equivalence Partitioning 1 testing:
+
+ps;ls;date;cat testhelper.txt
+
+ps;ls;date&cat testhelper.txt
+
+ps;ls&date&cat testhelper.txt
+
+ps&ls;date;cat testhelper.txt
+
+ps&ls;date&cat testhelper.txt
+
+ps&ls&date;cat testhelper.txt
+
+ps;ls&date;cat testhelper.txt
+
+ps&ls&date&cat testhelper.txt
+
+Commands used for Equivalence Partitioning 2 testing:
+
+ls&echo "hello"
+
+ls;echo "hello"
+
+ls&echo "hello"&date
+
+ls;echo "hello";date
+
+ls;echo "hello"&date
+
+Test cases for covering corner cases:
+
+ls&;
+
+ls&
+
+asdf
+
+ls;ls;
+
+ls
+
+

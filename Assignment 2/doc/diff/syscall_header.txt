@@ -1,0 +1,7 @@
+--- ../purexv6/syscall.h	2019-10-03 18:10:02.710852164 -0500
++++ ./syscall.h	2019-10-03 18:38:34.251251777 -0500
+@@ -20,3 +20,4 @@
+ #define SYS_link   19
+ #define SYS_mkdir  20
+ #define SYS_close  21
++#define SYS_date   22 
